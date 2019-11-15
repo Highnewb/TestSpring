@@ -7,12 +7,6 @@
 	<artifactId>libraries-testing</artifactId>
 	<name>libraries-testing</name>
 
-	<parent>
-		<groupId>com.baeldung</groupId>
-		<artifactId>parent-modules</artifactId>
-		<version>1.0.0-SNAPSHOT</version>
-	</parent>
-
 	<dependencies>
 		<dependency>
 			<groupId>net.serenity-bdd</groupId>
