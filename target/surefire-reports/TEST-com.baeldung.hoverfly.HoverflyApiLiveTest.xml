@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.baeldung.hoverfly.HoverflyApiLiveTest" time="9.476" tests="7" errors="0" skipped="0" failures="0">
+<testsuite name="com.baeldung.hoverfly.HoverflyApiLiveTest" time="9.104" tests="7" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.4+11-post-Ubuntu-1ubuntu218.04.3"/>
@@ -57,11 +57,11 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="givenPutStudent_whenXPathMatcher_thenRequestXmlContainsElementInXPath" classname="com.baeldung.hoverfly.HoverflyApiLiveTest" time="0.068"/>
-  <testcase name="givenGetCourseById_whenRequestSimulated_thenAPICalledSuccessfully" classname="com.baeldung.hoverfly.HoverflyApiLiveTest" time="0.006"/>
-  <testcase name="givenPostStudent_whenBodyRequestMatcherJson_thenResponseContainsEqualJson" classname="com.baeldung.hoverfly.HoverflyApiLiveTest" time="3.01"/>
-  <testcase name="givenGetStudent_whenRequestMatcher_thenAPICalledSuccessfully" classname="com.baeldung.hoverfly.HoverflyApiLiveTest" time="0.003"/>
+  <testcase name="givenPutStudent_whenXPathMatcher_thenRequestXmlContainsElementInXPath" classname="com.baeldung.hoverfly.HoverflyApiLiveTest" time="0.041"/>
+  <testcase name="givenGetCourseById_whenRequestSimulated_thenAPICalledSuccessfully" classname="com.baeldung.hoverfly.HoverflyApiLiveTest" time="0.033"/>
+  <testcase name="givenPostStudent_whenBodyRequestMatcherJson_thenResponseContainsEqualJson" classname="com.baeldung.hoverfly.HoverflyApiLiveTest" time="3.011"/>
+  <testcase name="givenGetStudent_whenRequestMatcher_thenAPICalledSuccessfully" classname="com.baeldung.hoverfly.HoverflyApiLiveTest" time="0.004"/>
   <testcase name="givenPostStudent_whenBodyRequestMatcherXml_thenResponseContainsEqualXml" classname="com.baeldung.hoverfly.HoverflyApiLiveTest" time="3.005"/>
   <testcase name="givenPutStudent_whenJsonPathMatcher_thenRequestJsonContainsElementInPath" classname="com.baeldung.hoverfly.HoverflyApiLiveTest" time="0.002"/>
-  <testcase name="givenPostCourse_whenDelayInRequest_thenResponseIsDelayed" classname="com.baeldung.hoverfly.HoverflyApiLiveTest" time="3.382"/>
+  <testcase name="givenPostCourse_whenDelayInRequest_thenResponseIsDelayed" classname="com.baeldung.hoverfly.HoverflyApiLiveTest" time="3.008"/>
 </testsuite>

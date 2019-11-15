@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.baeldung.serenity.spring.AdderSpringSerenityRunnerIntegrationTest" time="0.018" tests="1" errors="0" skipped="0" failures="0">
+<testsuite name="com.baeldung.serenity.spring.AdderSpringSerenityRunnerIntegrationTest" time="1.248" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.4+11-post-Ubuntu-1ubuntu218.04.3"/>
@@ -57,5 +57,5 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="givenNumber_whenAdd_thenSummedUp" classname="com.baeldung.serenity.spring.AdderSpringSerenityRunnerIntegrationTest" time="0.018"/>
+  <testcase name="givenNumber_whenAdd_thenSummedUp" classname="com.baeldung.serenity.spring.AdderSpringSerenityRunnerIntegrationTest" time="1.248"/>
 </testsuite>
