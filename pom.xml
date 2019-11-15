@@ -7,6 +7,9 @@
 	<artifactId>libraries-testing</artifactId>
 	<name>libraries-testing</name>
 
+	<groupId>com.baeldung</groupId>
+	<version>1.0.0</version>
+
 	<dependencies>
 		<dependency>
 			<groupId>net.serenity-bdd</groupId>
@@ -144,6 +147,15 @@
 					</execution>
 				</executions>
 			</plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
 
 		</plugins>
 	</build>

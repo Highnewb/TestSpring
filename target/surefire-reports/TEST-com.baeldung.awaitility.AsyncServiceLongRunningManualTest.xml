@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.baeldung.jsonassert.JsonAssertUnitTest" time="0.192" tests="12" errors="0" skipped="0" failures="0">
+<testsuite name="com.baeldung.awaitility.AsyncServiceLongRunningManualTest" time="13.724" tests="7" errors="1" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.4+11-post-Ubuntu-1ubuntu218.04.3"/>
@@ -57,16 +57,37 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="whenMessageUsedInAssertion_thenDisplayMessageOnFailure" classname="com.baeldung.jsonassert.JsonAssertUnitTest" time="0.181"/>
-  <testcase name="givenNestedObjects_whenAssertEquals_thenPass" classname="com.baeldung.jsonassert.JsonAssertUnitTest" time="0"/>
-  <testcase name="givenArray_whenComparingExtended_thenNotEqual" classname="com.baeldung.jsonassert.JsonAssertUnitTest" time="0.001"/>
-  <testcase name="givenArray_whenComparing_thenOrderMustMatchForStrict" classname="com.baeldung.jsonassert.JsonAssertUnitTest" time="0.001"/>
-  <testcase name="whenComparingSizeOfArray_thenPass" classname="com.baeldung.jsonassert.JsonAssertUnitTest" time="0.001"/>
-  <testcase name="whenComparingContentsOfArray_thenPass" classname="com.baeldung.jsonassert.JsonAssertUnitTest" time="0.001"/>
-  <testcase name="givenDifferentTypes_whenAssertEqualsSameValue_thenPass" classname="com.baeldung.jsonassert.JsonAssertUnitTest" time="0"/>
-  <testcase name="givenValueMatcher_whenComparingUsingRegex_thenPass" classname="com.baeldung.jsonassert.JsonAssertUnitTest" time="0.004"/>
-  <testcase name="whenUsingCompareModeOrBoolean_thenBothAreSame" classname="com.baeldung.jsonassert.JsonAssertUnitTest" time="0.001"/>
-  <testcase name="givenDifferentOrderForJsonObject_whenAssertEquals_thenPass" classname="com.baeldung.jsonassert.JsonAssertUnitTest" time="0.001"/>
-  <testcase name="givenLenientode_whenAssertEqualsSameJsonString_thenPass" classname="com.baeldung.jsonassert.JsonAssertUnitTest" time="0"/>
-  <testcase name="givenStrictMode_whenAssertNotEqualsExtendedJsonString_thenPass" classname="com.baeldung.jsonassert.JsonAssertUnitTest" time="0.001"/>
+  <testcase name="givenValue_whenAddValue_thenValueAdded" classname="com.baeldung.awaitility.AsyncServiceLongRunningManualTest" time="3.031"/>
+  <testcase name="givenAsyncService_whenInitialize_thenInitOccurs_withDefualts" classname="com.baeldung.awaitility.AsyncServiceLongRunningManualTest" time="2.001"/>
+  <testcase name="givenAsyncService_whenInitialize_thenInitOccurs_withProxy" classname="com.baeldung.awaitility.AsyncServiceLongRunningManualTest" time="0.65">
+    <error message="Cannot define class using reflection" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: Cannot define class using reflection
+	at java.base/java.lang.Class.getMethod(Class.java:2108)
+	at net.bytebuddy.dynamic.loading.ClassInjector$UsingUnsafe$Dispatcher$CreationAction.run(ClassInjector.java:1260)
+	at net.bytebuddy.dynamic.loading.ClassInjector$UsingUnsafe$Dispatcher$CreationAction.run(ClassInjector.java:1248)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at net.bytebuddy.dynamic.loading.ClassInjector$UsingUnsafe.<clinit>(ClassInjector.java:1127)
+	at net.bytebuddy.dynamic.loading.ClassLoadingStrategy$ForUnsafeInjection.load(ClassLoadingStrategy.java:458)
+	at net.bytebuddy.dynamic.TypeResolutionStrategy$Passive.initialize(TypeResolutionStrategy.java:79)
+	at net.bytebuddy.dynamic.DynamicType$Default$Unloaded.load(DynamicType.java:4456)
+	at net.bytebuddy.dynamic.loading.ClassInjector$UsingReflection$Dispatcher$Indirect.make(ClassInjector.java:684)
+	at net.bytebuddy.dynamic.loading.ClassInjector$UsingReflection$Dispatcher$CreationAction.run(ClassInjector.java:302)
+	at net.bytebuddy.dynamic.loading.ClassInjector$UsingReflection$Dispatcher$CreationAction.run(ClassInjector.java:290)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at net.bytebuddy.dynamic.loading.ClassInjector$UsingReflection.<clinit>(ClassInjector.java:70)
+	at net.bytebuddy.dynamic.loading.ClassLoadingStrategy$Default$InjectionDispatcher.load(ClassLoadingStrategy.java:184)
+	at net.bytebuddy.dynamic.loading.ClassLoadingStrategy$Default.load(ClassLoadingStrategy.java:120)
+	at net.bytebuddy.dynamic.TypeResolutionStrategy$Passive.initialize(TypeResolutionStrategy.java:79)
+	at net.bytebuddy.dynamic.DynamicType$Default$Unloaded.load(DynamicType.java:4456)
+	at net.bytebuddy.dynamic.DynamicType$Default$Unloaded.load(DynamicType.java:4446)
+	at org.awaitility.proxy.internal.ByteBuddyProxyCreator.crateForParameters(ByteBuddyProxyCreator.java:69)
+	at org.awaitility.proxy.internal.ByteBuddyProxyCreator.create(ByteBuddyProxyCreator.java:57)
+	at org.awaitility.proxy.internal.MethodCallRecorder.createProxy(MethodCallRecorder.java:53)
+	at org.awaitility.proxy.AwaitilityClassProxy.to(AwaitilityClassProxy.java:39)
+	at com.baeldung.awaitility.AsyncServiceLongRunningManualTest.givenAsyncService_whenInitialize_thenInitOccurs_withProxy(AsyncServiceLongRunningManualTest.java:54)
+]]></error>
+  </testcase>
+  <testcase name="givenAsyncService_whenInitialize_thenInitOccurs1" classname="com.baeldung.awaitility.AsyncServiceLongRunningManualTest" time="2.012"/>
+  <testcase name="givenAsyncService_whenInitialize_thenInitOccurs2" classname="com.baeldung.awaitility.AsyncServiceLongRunningManualTest" time="2.007"/>
+  <testcase name="givenAsyncService_whenInitialize_thenInitOccurs3" classname="com.baeldung.awaitility.AsyncServiceLongRunningManualTest" time="2.012"/>
+  <testcase name="givenAsyncService_whenGetValue_thenExceptionIgnored" classname="com.baeldung.awaitility.AsyncServiceLongRunningManualTest" time="2.011"/>
 </testsuite>

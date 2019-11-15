@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.baeldung.jsonassert.JsonAssertUnitTest" time="0.192" tests="12" errors="0" skipped="0" failures="0">
+<testsuite name="com.baeldung.serenity.spring.AdderMockMvcIntegrationTest" time="3.106" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.4+11-post-Ubuntu-1ubuntu218.04.3"/>
@@ -57,16 +57,5 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="whenMessageUsedInAssertion_thenDisplayMessageOnFailure" classname="com.baeldung.jsonassert.JsonAssertUnitTest" time="0.181"/>
-  <testcase name="givenNestedObjects_whenAssertEquals_thenPass" classname="com.baeldung.jsonassert.JsonAssertUnitTest" time="0"/>
-  <testcase name="givenArray_whenComparingExtended_thenNotEqual" classname="com.baeldung.jsonassert.JsonAssertUnitTest" time="0.001"/>
-  <testcase name="givenArray_whenComparing_thenOrderMustMatchForStrict" classname="com.baeldung.jsonassert.JsonAssertUnitTest" time="0.001"/>
-  <testcase name="whenComparingSizeOfArray_thenPass" classname="com.baeldung.jsonassert.JsonAssertUnitTest" time="0.001"/>
-  <testcase name="whenComparingContentsOfArray_thenPass" classname="com.baeldung.jsonassert.JsonAssertUnitTest" time="0.001"/>
-  <testcase name="givenDifferentTypes_whenAssertEqualsSameValue_thenPass" classname="com.baeldung.jsonassert.JsonAssertUnitTest" time="0"/>
-  <testcase name="givenValueMatcher_whenComparingUsingRegex_thenPass" classname="com.baeldung.jsonassert.JsonAssertUnitTest" time="0.004"/>
-  <testcase name="whenUsingCompareModeOrBoolean_thenBothAreSame" classname="com.baeldung.jsonassert.JsonAssertUnitTest" time="0.001"/>
-  <testcase name="givenDifferentOrderForJsonObject_whenAssertEquals_thenPass" classname="com.baeldung.jsonassert.JsonAssertUnitTest" time="0.001"/>
-  <testcase name="givenLenientode_whenAssertEqualsSameJsonString_thenPass" classname="com.baeldung.jsonassert.JsonAssertUnitTest" time="0"/>
-  <testcase name="givenStrictMode_whenAssertNotEqualsExtendedJsonString_thenPass" classname="com.baeldung.jsonassert.JsonAssertUnitTest" time="0.001"/>
+  <testcase name="givenNumber_whenAdd_thenSummedUp" classname="com.baeldung.serenity.spring.AdderMockMvcIntegrationTest" time="3.106"/>
 </testsuite>

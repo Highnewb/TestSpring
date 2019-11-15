@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: com.baeldung.serenity.GoogleSearchScreenplayLiveTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.254 sec <<< FAILURE! - in com.baeldung.serenity.GoogleSearchScreenplayLiveTest
+whenGoogleBaeldungThenShouldSeeEugen(com.baeldung.serenity.GoogleSearchScreenplayLiveTest)  Time elapsed: 0.194 sec  <<< FAILURE!
+net.thucydides.core.pages.WrongPageError: The page object class com.baeldung.serenity.screenplay.GoogleSearchPage looks dodgy:
+This page object does not appear have a constructor that takes a WebDriver parameter
+	at net.thucydides.core.pages.Pages.thisPageObjectLooksDodgy(Pages.java:293)
+	at net.thucydides.core.pages.Pages.getCurrentPageOfType(Pages.java:215)
+	at net.thucydides.core.pages.Pages.getPage(Pages.java:90)
+	at net.thucydides.core.steps.PageObjectDependencyInjector.instantiatePageObjectIfNotAssigned(PageObjectDependencyInjector.java:55)
+	at net.thucydides.core.steps.PageObjectDependencyInjector.injectDependenciesInto(PageObjectDependencyInjector.java:33)
+	at net.thucydides.core.steps.StepFactory.injectOtherDependenciesInto(StepFactory.java:173)
+	at net.thucydides.core.steps.StepFactory.instantiateUniqueStepLibraryFor(StepFactory.java:190)
+	at net.thucydides.core.steps.StepFactory.getUniqueStepLibraryFor(StepFactory.java:122)
+	at net.serenitybdd.screenplay.Tasks.instrumented(Tasks.java:12)
+	at com.baeldung.serenity.screenplay.StartWith.googleSearchPage(StartWith.java:13)
+	at com.baeldung.serenity.GoogleSearchScreenplayLiveTest.whenGoogleBaeldungThenShouldSeeEugen(GoogleSearchScreenplayLiveTest.java:37)
+

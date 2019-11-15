@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.baeldung.serenity.GoogleSearchPageObjectLiveTest" time="1.993" tests="1" errors="1" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="11.0.4+11-post-Ubuntu-1ubuntu218.04.3"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-11-openjdk-amd64/lib"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/highnewb/Cours/Mod_Env/tutorials/libraries-testing"/>
+    <property name="java.vm.vendor" value="Ubuntu"/>
+    <property name="java.vendor.url" value="https://ubuntu.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="user.country" value="FR"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/highnewb/Cours/Mod_Env/tutorials/libraries-testing"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="java.runtime.version" value="11.0.4+11-post-Ubuntu-1ubuntu218.04.3"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="4.18.0-15-generic"/>
+    <property name="user.home" value="/home/highnewb"/>
+    <property name="user.timezone" value="Europe/Paris"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="user.name" value="highnewb"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean package"/>
+    <property name="java.home" value="/usr/lib/jvm/java-11-openjdk-amd64"/>
+    <property name="user.language" value="fr"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="11.0.4"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="java.vendor" value="Ubuntu"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2019-07-16"/>
+    <property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-lts"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="whenGoogleBaeldungThenShouldSeeEugen" classname="com.baeldung.serenity.GoogleSearchPageObjectLiveTest" time="1.993">
+    <error message="Could not instantiate class org.openqa.selenium.chrome.ChromeDriver" type="net.thucydides.core.webdriver.UnsupportedDriverException">net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate class org.openqa.selenium.chrome.ChromeDriver
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:867)
+	at net.serenitybdd.core.webdriver.servicepools.DriverServiceExecutable.checkForMissingBinaries(DriverServiceExecutable.java:107)
+	at net.serenitybdd.core.webdriver.servicepools.DriverServiceExecutable.asAFile(DriverServiceExecutable.java:99)
+	at net.serenitybdd.core.webdriver.servicepools.ChromeServicePool.chromeDriverExecutable(ChromeServicePool.java:44)
+	at net.serenitybdd.core.webdriver.servicepools.ChromeServicePool.newDriverService(ChromeServicePool.java:25)
+	at net.serenitybdd.core.webdriver.servicepools.ChromeServicePool.newDriverService(ChromeServicePool.java:12)
+	at net.serenitybdd.core.webdriver.servicepools.DriverServicePool.driverServiceWithName(DriverServicePool.java:55)
+	at net.serenitybdd.core.webdriver.servicepools.DriverServicePool.getDriverService(DriverServicePool.java:46)
+	at net.serenitybdd.core.webdriver.servicepools.DriverServicePool.start(DriverServicePool.java:61)
+	at net.serenitybdd.core.webdriver.servicepools.DriverServicePool.ensureServiceIsRunning(DriverServicePool.java:87)
+	at net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider.getDriverServicePool(ChromeDriverProvider.java:29)
+	at net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider.newInstance(ChromeDriverProvider.java:49)
+	at net.thucydides.core.webdriver.WebDriverFactory.newWebdriverInstance(WebDriverFactory.java:126)
+	at net.thucydides.core.webdriver.WebDriverFacade.newDriverInstance(WebDriverFacade.java:149)
+	at net.thucydides.core.webdriver.WebDriverFacade.newProxyDriver(WebDriverFacade.java:140)
+	at net.thucydides.core.webdriver.WebDriverFacade.getProxiedDriver(WebDriverFacade.java:110)
+	at net.thucydides.core.webdriver.WebDriverFacade.get(WebDriverFacade.java:181)
+	at net.serenitybdd.core.pages.PageObject.openPageAtUrl(PageObject.java:860)
+	at net.serenitybdd.core.pages.PageObject.open(PageObject.java:761)
+	at net.serenitybdd.core.pages.PageObject.open(PageObject.java:749)
+	at com.baeldung.serenity.GoogleSearchPageObjectLiveTest.whenGoogleBaeldungThenShouldSeeEugen(GoogleSearchPageObjectLiveTest.java:20)
+</error>
+    <system-out><![CDATA[15:46:14.205 [main] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM /home/highnewb/Cours/Mod_Env/tutorials/libraries-testing/serenity.properties 
+15:46:14.221 [main] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM /home/highnewb/Cours/Mod_Env/tutorials/libraries-testing/serenity.properties 
+15:46:14.222 [main] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM /home/highnewb/Cours/Mod_Env/tutorials/libraries-testing/serenity.properties 
+15:46:14.282 [main] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - jira.project=<jira-project>
+15:46:14.283 [main] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - jira.password=<jira-password>
+15:46:14.283 [main] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - jira.url=<jira-url>
+15:46:14.283 [main] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - jira.username=<jira-username>
+15:46:15.192 [main] INFO net.serenitybdd.core.Serenity - &amp#27;[36m
+
+-------------------------------------------------------------------------------------
+     _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
+    /       ||   ____||   _  \     |   ____||  \ |  | |  | |           |\   \  /   / 
+   |   (----`|  |__   |  |_)  |    |  |__   |   \|  | |  | `---|  |----` \   \/   /  
+    \   \    |   __|  |      /     |   __|  |  . `  | |  |     |  |       \_    _/   
+.----)   |   |  |____ |  |\  \----.|  |____ |  |\   | |  |     |  |         |  |     
+|_______/    |_______|| _| `._____||_______||__| \__| |__|     |__|         |__|    
+                                                                                     
+ News and tutorials at http://www.serenity-bdd.info                                  
+ Documentation at https://wakaleo.gitbooks.io/the-serenity-book/content/             
+ Join the Serenity Community on Rocket Chat at https://serenity-bdd.rocket.chat      
+ Serenity BDD Support and Training at http://serenity-bdd.info/#/trainingandsupport  
+ Learn Serenity BDD online at http://serenity-dojo.com                               
+-------------------------------------------------------------------------------------
+&amp#27;[0m
+15:46:15.300 [main] DEBUG net.thucydides.core.steps.StepEventBus - Test suite started for class com.baeldung.serenity.GoogleSearchPageObjectLiveTest
+15:46:15.417 [main] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM /home/highnewb/Cours/Mod_Env/tutorials/libraries-testing/serenity.properties 
+15:46:15.418 [main] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM /home/highnewb/Cours/Mod_Env/tutorials/libraries-testing/serenity.properties 
+15:46:15.418 [main] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM /home/highnewb/Cours/Mod_Env/tutorials/libraries-testing/serenity.properties 
+15:46:15.450 [main] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM /home/highnewb/Cours/Mod_Env/tutorials/libraries-testing/serenity.properties 
+15:46:15.450 [main] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM /home/highnewb/Cours/Mod_Env/tutorials/libraries-testing/serenity.properties 
+15:46:15.451 [main] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM /home/highnewb/Cours/Mod_Env/tutorials/libraries-testing/serenity.properties 
+15:46:15.457 [main] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - jira.project=<jira-project>
+15:46:15.457 [main] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - jira.password=<jira-password>
+15:46:15.458 [main] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - jira.url=<jira-url>
+15:46:15.458 [main] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - jira.username=<jira-username>
+15:46:16.208 [main] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM /home/highnewb/Cours/Mod_Env/tutorials/libraries-testing/serenity.properties 
+15:46:16.208 [main] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM /home/highnewb/Cours/Mod_Env/tutorials/libraries-testing/serenity.properties 
+15:46:16.209 [main] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM /home/highnewb/Cours/Mod_Env/tutorials/libraries-testing/serenity.properties 
+15:46:16.236 [main] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM /home/highnewb/Cours/Mod_Env/tutorials/libraries-testing/serenity.properties 
+15:46:16.236 [main] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM /home/highnewb/Cours/Mod_Env/tutorials/libraries-testing/serenity.properties 
+15:46:16.236 [main] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM /home/highnewb/Cours/Mod_Env/tutorials/libraries-testing/serenity.properties 
+15:46:16.854 [main] DEBUG net.serenitybdd.plugins.jira.JiraUpdater - JIRA LISTENER STATUS
+15:46:16.855 [main] DEBUG net.serenitybdd.plugins.jira.JiraUpdater - JIRA URL: <jira-url> 
+15:46:16.855 [main] DEBUG net.serenitybdd.plugins.jira.JiraUpdater - REPORT URL:  
+15:46:16.855 [main] DEBUG net.serenitybdd.plugins.jira.JiraUpdater - WORKFLOW ACTIVE: false 
+15:46:16.856 [main] DEBUG net.serenitybdd.plugins.jira.zephyr.ZephyrUpdater - ZEPHYR ACTIVE: false 
+15:46:16.857 [main] DEBUG net.thucydides.core.steps.StepEventBus - Registering custom listener net.serenitybdd.plugins.jira.JiraStepListener@75308740
+15:46:16.929 [main] INFO net.serenitybdd.core.Serenity - Test Suite Started: Google search page object live test
+15:46:17.053 [main] INFO net.serenitybdd.core.Serenity - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: whenGoogleBaeldungThenShouldSeeEugen
+-------------------------------------------------------------------
+15:46:17.053 [main] INFO net.serenitybdd.core.Serenity - TEST NUMBER: 1
+15:46:17.280 [main] ERROR net.thucydides.core.webdriver.WebDriverFacade - FAILED TO CREATE NEW WEBDRIVER_DRIVER INSTANCE class org.openqa.selenium.chrome.ChromeDriver: Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (The path to the chromedriver driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://sites.google.com/a/chromium.org/chromedriver/downloads. The latest version can be downloaded from https://sites.google.com/a/chromium.org/chromedriver/downloads
+net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (The path to the chromedriver driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://sites.google.com/a/chromium.org/chromedriver/downloads. The latest version can be downloaded from https://sites.google.com/a/chromium.org/chromedriver/downloads
+	at net.thucydides.core.webdriver.WebDriverFactory.newWebdriverInstance(WebDriverFactory.java:136)
+	at net.thucydides.core.webdriver.WebDriverFacade.newDriverInstance(WebDriverFacade.java:149)
+	at net.thucydides.core.webdriver.WebDriverFacade.newProxyDriver(WebDriverFacade.java:140)
+	at net.thucydides.core.webdriver.WebDriverFacade.getProxiedDriver(WebDriverFacade.java:110)
+	at net.thucydides.core.webdriver.WebDriverFacade.get(WebDriverFacade.java:181)
+	at net.serenitybdd.core.pages.PageObject.openPageAtUrl(PageObject.java:860)
+	at net.serenitybdd.core.pages.PageObject.open(PageObject.java:761)
+	at net.serenitybdd.core.pages.PageObject.open(PageObject.java:749)
+	at com.baeldung.serenity.GoogleSearchPageObjectLiveTest.whenGoogleBaeldungThenShouldSeeEugen(GoogleSearchPageObjectLiveTest.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at net.serenitybdd.junit.runners.SerenityStatement.evaluate(SerenityStatement.java:33)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at net.serenitybdd.junit.runners.SerenityRunner.performRunChild(SerenityRunner.java:473)
+	at net.serenitybdd.junit.runners.SerenityRunner.runChild(SerenityRunner.java:448)
+	at net.serenitybdd.junit.runners.SerenityRunner.runChild(SerenityRunner.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at net.serenitybdd.junit.runners.SerenityRunner.run(SerenityRunner.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: java.lang.IllegalStateException: The path to the chromedriver driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://sites.google.com/a/chromium.org/chromedriver/downloads. The latest version can be downloaded from https://sites.google.com/a/chromium.org/chromedriver/downloads
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:867)
+	at net.serenitybdd.core.webdriver.servicepools.DriverServiceExecutable.checkForMissingBinaries(DriverServiceExecutable.java:107)
+	at net.serenitybdd.core.webdriver.servicepools.DriverServiceExecutable.asAFile(DriverServiceExecutable.java:99)
+	at net.serenitybdd.core.webdriver.servicepools.ChromeServicePool.chromeDriverExecutable(ChromeServicePool.java:44)
+	at net.serenitybdd.core.webdriver.servicepools.ChromeServicePool.newDriverService(ChromeServicePool.java:25)
+	at net.serenitybdd.core.webdriver.servicepools.ChromeServicePool.newDriverService(ChromeServicePool.java:12)
+	at net.serenitybdd.core.webdriver.servicepools.DriverServicePool.driverServiceWithName(DriverServicePool.java:55)
+	at net.serenitybdd.core.webdriver.servicepools.DriverServicePool.getDriverService(DriverServicePool.java:46)
+	at net.serenitybdd.core.webdriver.servicepools.DriverServicePool.start(DriverServicePool.java:61)
+	at net.serenitybdd.core.webdriver.servicepools.DriverServicePool.ensureServiceIsRunning(DriverServicePool.java:87)
+	at net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider.getDriverServicePool(ChromeDriverProvider.java:29)
+	at net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider.newInstance(ChromeDriverProvider.java:49)
+	at net.thucydides.core.webdriver.WebDriverFactory.newWebdriverInstance(WebDriverFactory.java:126)
+	... 35 common frames omitted
+]]></system-out>
+    <system-err><![CDATA[nov. 15, 2019 3:46:17 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFOS: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+]]></system-err>
+  </testcase>
+</testsuite>

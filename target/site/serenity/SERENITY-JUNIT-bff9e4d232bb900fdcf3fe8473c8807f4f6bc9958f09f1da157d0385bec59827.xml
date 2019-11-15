@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="com.baeldung.serenity.spring.AdderMockMvcIntegrationTest" skipped="0" tests="1" time="3.12" timestamp="2019-11-15 03:46:22"><testcase classname="com.baeldung.serenity.spring.AdderMockMvcIntegrationTest" name="Given number when add then summed up"/></testsuite>

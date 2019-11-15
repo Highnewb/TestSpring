@@ -1,0 +1,30 @@
+-------------------------------------------------------------------------------
+Test set: com.baeldung.awaitility.AsyncServiceLongRunningManualTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 13.725 sec <<< FAILURE! - in com.baeldung.awaitility.AsyncServiceLongRunningManualTest
+givenAsyncService_whenInitialize_thenInitOccurs_withProxy(com.baeldung.awaitility.AsyncServiceLongRunningManualTest)  Time elapsed: 0.65 sec  <<< ERROR!
+java.lang.UnsupportedOperationException: Cannot define class using reflection
+	at java.base/java.lang.Class.getMethod(Class.java:2108)
+	at net.bytebuddy.dynamic.loading.ClassInjector$UsingUnsafe$Dispatcher$CreationAction.run(ClassInjector.java:1260)
+	at net.bytebuddy.dynamic.loading.ClassInjector$UsingUnsafe$Dispatcher$CreationAction.run(ClassInjector.java:1248)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at net.bytebuddy.dynamic.loading.ClassInjector$UsingUnsafe.<clinit>(ClassInjector.java:1127)
+	at net.bytebuddy.dynamic.loading.ClassLoadingStrategy$ForUnsafeInjection.load(ClassLoadingStrategy.java:458)
+	at net.bytebuddy.dynamic.TypeResolutionStrategy$Passive.initialize(TypeResolutionStrategy.java:79)
+	at net.bytebuddy.dynamic.DynamicType$Default$Unloaded.load(DynamicType.java:4456)
+	at net.bytebuddy.dynamic.loading.ClassInjector$UsingReflection$Dispatcher$Indirect.make(ClassInjector.java:684)
+	at net.bytebuddy.dynamic.loading.ClassInjector$UsingReflection$Dispatcher$CreationAction.run(ClassInjector.java:302)
+	at net.bytebuddy.dynamic.loading.ClassInjector$UsingReflection$Dispatcher$CreationAction.run(ClassInjector.java:290)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at net.bytebuddy.dynamic.loading.ClassInjector$UsingReflection.<clinit>(ClassInjector.java:70)
+	at net.bytebuddy.dynamic.loading.ClassLoadingStrategy$Default$InjectionDispatcher.load(ClassLoadingStrategy.java:184)
+	at net.bytebuddy.dynamic.loading.ClassLoadingStrategy$Default.load(ClassLoadingStrategy.java:120)
+	at net.bytebuddy.dynamic.TypeResolutionStrategy$Passive.initialize(TypeResolutionStrategy.java:79)
+	at net.bytebuddy.dynamic.DynamicType$Default$Unloaded.load(DynamicType.java:4456)
+	at net.bytebuddy.dynamic.DynamicType$Default$Unloaded.load(DynamicType.java:4446)
+	at org.awaitility.proxy.internal.ByteBuddyProxyCreator.crateForParameters(ByteBuddyProxyCreator.java:69)
+	at org.awaitility.proxy.internal.ByteBuddyProxyCreator.create(ByteBuddyProxyCreator.java:57)
+	at org.awaitility.proxy.internal.MethodCallRecorder.createProxy(MethodCallRecorder.java:53)
+	at org.awaitility.proxy.AwaitilityClassProxy.to(AwaitilityClassProxy.java:39)
+	at com.baeldung.awaitility.AsyncServiceLongRunningManualTest.givenAsyncService_whenInitialize_thenInitOccurs_withProxy(AsyncServiceLongRunningManualTest.java:54)
+

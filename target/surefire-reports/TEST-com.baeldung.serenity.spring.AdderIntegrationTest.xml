@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.baeldung.serenity.spring.AdderIntegrationTest" time="0.001" tests="1" errors="1" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="11.0.4+11-post-Ubuntu-1ubuntu218.04.3"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-11-openjdk-amd64/lib"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/highnewb/Cours/Mod_Env/tutorials/libraries-testing"/>
+    <property name="java.vm.vendor" value="Ubuntu"/>
+    <property name="java.vendor.url" value="https://ubuntu.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="user.country" value="FR"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/highnewb/Cours/Mod_Env/tutorials/libraries-testing"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="java.runtime.version" value="11.0.4+11-post-Ubuntu-1ubuntu218.04.3"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="4.18.0-15-generic"/>
+    <property name="user.home" value="/home/highnewb"/>
+    <property name="user.timezone" value="Europe/Paris"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="user.name" value="highnewb"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean package"/>
+    <property name="java.home" value="/usr/lib/jvm/java-11-openjdk-amd64"/>
+    <property name="user.language" value="fr"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="11.0.4"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="java.vendor" value="Ubuntu"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2019-07-16"/>
+    <property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-lts"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="initializationError" classname="com.baeldung.serenity.spring.AdderIntegrationTest" time="0.001">
+    <error message="class [Ljava.lang.Object; cannot be cast to class [Lorg.jbehave.core.reporters.Format; ([Ljava.lang.Object; is in module java.base of loader &apos;bootstrap&apos;; [Lorg.jbehave.core.reporters.Format; is in unnamed module of loader &apos;app&apos;)" type="java.lang.ClassCastException"><![CDATA[java.lang.ClassCastException: class [Ljava.lang.Object; cannot be cast to class [Lorg.jbehave.core.reporters.Format; ([Ljava.lang.Object; is in module java.base of loader 'bootstrap'; [Lorg.jbehave.core.reporters.Format; is in unnamed module of loader 'app')
+	at net.serenitybdd.jbehave.SerenityJBehave.defaultConfiguration(SerenityJBehave.java:62)
+	at net.serenitybdd.jbehave.SerenityStories.configuration(SerenityStories.java:83)
+	at org.jbehave.core.ConfigurableEmbedder.configuredEmbedder(ConfigurableEmbedder.java:118)
+	at net.serenitybdd.jbehave.runners.SerenityReportingRunner.<init>(SerenityReportingRunner.java:80)
+	at net.serenitybdd.jbehave.runners.SerenityReportingRunner.<init>(SerenityReportingRunner.java:74)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.junit.internal.builders.AnnotatedBuilder.buildRunner(AnnotatedBuilder.java:104)
+	at org.junit.internal.builders.AnnotatedBuilder.runnerForClass(AnnotatedBuilder.java:86)
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:59)
+	at org.junit.internal.builders.AllDefaultPossibilitiesBuilder.runnerForClass(AllDefaultPossibilitiesBuilder.java:26)
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:59)
+	at org.junit.internal.requests.ClassRequest.getRunner(ClassRequest.java:33)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:262)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]></error>
+    <system-out><![CDATA[15:46:26.896 [main] INFO net.serenitybdd.core.Serenity - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: Given number when add then summed up
+----------------------------------------------------------------------------
+15:46:26.897 [main] DEBUG net.thucydides.core.reports.ReportService - Reporting formats: [JSON, HTML]
+15:46:26.898 [main] DEBUG net.thucydides.core.reports.ReportService - Found reporter: net.thucydides.core.reports.xml.XMLTestOutcomeReporter@6e78177b(format = Optional[XML])
+15:46:26.898 [main] DEBUG net.thucydides.core.reports.ReportService - Found reporter: net.thucydides.core.reports.json.JSONTestOutcomeReporter@4ec37a42(format = Optional[JSON])
+15:46:26.899 [main] DEBUG net.thucydides.core.reports.ReportService - Registering reporter: net.thucydides.core.reports.json.JSONTestOutcomeReporter@4ec37a42
+15:46:26.899 [main] DEBUG net.thucydides.core.reports.ReportService - Found reporter: net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@798b36fd(format = Optional[HTML])
+15:46:26.899 [main] DEBUG net.thucydides.core.reports.ReportService - Registering reporter: net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@798b36fd
+15:46:26.899 [main] DEBUG net.thucydides.core.reports.ReportService - Reporting formats: [JSON, HTML]
+15:46:26.900 [main] DEBUG net.thucydides.core.reports.ReportService - Generating reports for 1 test outcomes using: net.thucydides.core.reports.json.JSONTestOutcomeReporter@4ec37a42
+15:46:26.900 [main] DEBUG net.thucydides.core.reports.junit.JUnitXMLOutcomeReporter - GENERATING JUNIT REPORTS
+15:46:26.903 [pool-16-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Adder spring serenity runner integration test:givenNumber_whenAdd_thenSummedUp
+15:46:26.903 [pool-16-thread-1] DEBUG net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@4ec37a42: Generating report for test outcome: Adder spring serenity runner integration test:givenNumber_whenAdd_thenSummedUp
+15:46:26.904 [pool-16-thread-1] DEBUG net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for Given number when add then summed up to file /home/highnewb/Cours/Mod_Env/tutorials/libraries-testing/target/site/serenity/e4a406785ad3a5da0c2e5996b3e9dae883efe517baa84a76f26f96d1ca2680b0.json (using temp file /home/highnewb/Cours/Mod_Env/tutorials/libraries-testing/target/site/serenity/e4a406785ad3a5da0c2e5996b3e9dae883efe517baa84a76f26f96d1ca2680b0.json926ac1cb-1970-4d9a-9741-92d725f32db3)
+15:46:26.906 [pool-16-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Adder spring serenity runner integration test:givenNumber_whenAdd_thenSummedUp done
+15:46:26.906 [main] DEBUG net.thucydides.core.reports.ReportService - Shutting down executor service
+15:46:26.906 [main] DEBUG net.thucydides.core.reports.ReportService - Reports generated in: 6 ms
+15:46:26.906 [main] DEBUG net.thucydides.core.reports.ReportService - Generating reports for 1 test outcomes using: net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@798b36fd
+15:46:26.907 [main] DEBUG net.thucydides.core.reports.junit.JUnitXMLOutcomeReporter - GENERATING JUNIT REPORTS
+15:46:26.907 [pool-17-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Adder spring serenity runner integration test:givenNumber_whenAdd_thenSummedUp
+15:46:26.907 [pool-17-thread-1] DEBUG net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@798b36fd: Generating report for test outcome: Adder spring serenity runner integration test:givenNumber_whenAdd_thenSummedUp
+15:46:26.907 [pool-17-thread-1] DEBUG net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - GENERATE TEST OUTCOME REPORT FOR givenNumber_whenAdd_thenSummedUp in e4a406785ad3a5da0c2e5996b3e9dae883efe517baa84a76f26f96d1ca2680b0
+15:46:26.907 [pool-17-thread-1] DEBUG net.thucydides.core.requirements.RequirementsTagProvider - Requirements found:[]
+15:46:26.907 [pool-17-thread-1] DEBUG net.serenitybdd.plugins.jira.requirements.JIRARequirementsProvider - Find parent requirement in JIRA for Given number when add then summed up
+15:46:26.908 [pool-17-thread-1] DEBUG net.serenitybdd.plugins.jira.requirements.JIRARequirementsProvider - Find parent requirement in JIRA for Given number when add then summed up
+15:46:26.908 [pool-17-thread-1] DEBUG net.serenitybdd.plugins.jira.requirements.JIRARequirementsProvider - Find parent requirement in JIRA for Given number when add then summed up
+15:46:26.910 [pool-17-thread-1] DEBUG net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - GENERATING HTML REPORT FOR Adder spring serenity runner integration test:givenNumber_whenAdd_thenSummedUp in e4a406785ad3a5da0c2e5996b3e9dae883efe517baa84a76f26f96d1ca2680b0.html in directory target/site/serenity  
+15:46:26.911 [pool-17-thread-1] DEBUG net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - Generating report in e4a406785ad3a5da0c2e5996b3e9dae883efe517baa84a76f26f96d1ca2680b0.html
+15:46:26.924 [pool-17-thread-1] DEBUG net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - Generated report e4a406785ad3a5da0c2e5996b3e9dae883efe517baa84a76f26f96d1ca2680b0.html in 13 ms
+15:46:26.924 [pool-17-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Adder spring serenity runner integration test:givenNumber_whenAdd_thenSummedUp done
+15:46:26.924 [main] DEBUG net.thucydides.core.reports.ReportService - Shutting down executor service
+15:46:26.924 [main] DEBUG net.thucydides.core.reports.ReportService - Reports generated in: 18 ms
+15:46:26.925 [main] DEBUG net.thucydides.core.reports.ReportService - Generating report for configuration
+]]></system-out>
+  </testcase>
+</testsuite>
