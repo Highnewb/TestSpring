@@ -1,0 +1,8 @@
+com/baeldung/awaitility/AsyncService.class
+com/baeldung/serenity/membership/MemberGrade.class
+com/baeldung/serenity/github/GitHubUser.class
+com/baeldung/serenity/membership/Commodity.class
+com/baeldung/serenity/membership/Member.class
+com/baeldung/serenity/spring/AdderService.class
+com/baeldung/serenity/spring/PlainAdderController.class
+com/baeldung/serenity/spring/AdderController.class
